@@ -34,8 +34,8 @@ Try it: delete `API_KEY` from `.env` and run `npm start`.
 
 Start the server and open:
 
-- http://localhost:4000/doctor: the report rendered as a web page
-- http://localhost:4000/doctor.json: the raw JSON from `localhost-doctor --json`
+- https://localhost-doctor-demo.onrender.com/doctor: the report rendered as a web page
+- https://localhost-doctor-demo.onrender.com/doctor.json: the raw JSON from `localhost-doctor --json`
 
 The server runs the CLI with `child_process.execFile` and reads its JSON output.
 
