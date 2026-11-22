@@ -1,0 +1,23 @@
+{
+  "name": "localhost-doctor-demo",
+  "version": "1.0.0",
+  "description": "A tiny Express app showing how to use localhost-doctor",
+  "main": "server.js",
+  "scripts": {
+    "doctor": "localhost-doctor --ports 4000,5173",
+    "doctor:json": "localhost-doctor --json --ports 4000 > report.json",
+    "doctor:ci": "localhost-doctor --checks runtime,dependencies,environment",
+    "prestart": "localhost-doctor --checks runtime,dependencies,environment,ports --ports 4000",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "devDependencies": {
+    "localhost-doctor": "^1.0.0"
+  }
+}
